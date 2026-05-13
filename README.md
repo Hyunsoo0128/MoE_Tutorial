@@ -5,7 +5,6 @@
 **2026년 프론티어 AI를 지배하는 아키텍처 — 원리, 과제, 최신 기술, AWS 활용**
 
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-blue)]()
-[![License](https://img.shields.io/badge/License-Internal-orange)]()
 [![AWS](https://img.shields.io/badge/AWS-Bedrock%20%7C%20SageMaker%20%7C%20Trainium-FF9900?logo=amazonaws)]()
 
 *GPT-5, DeepSeek-V4, Llama 4, Qwen3, Mistral Large 3 — 2026년 프론티어 모델의 공통 아키텍처*
