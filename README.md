@@ -161,10 +161,10 @@ Expert Parallelism은 **all-to-all 통신**을 유발합니다. 통신량이 GPU
 
 ```
 [기존 MoE]  토큰 X → Expert 2 → 출력 A ─┐
-                   → Expert 7 → 출력 B ─┴→ 가중합 (A, B 독립)
+                 → Expert 7 → 출력 B ─┴→ 가중합 (A, B 독립)
 
 [CoE]       토큰 X → Router① → Expert 2 → X' → Router② → Expert 7 → 최종 출력
-                                                (X' 기반 선택)    (X' 입력)
+                                             (X' 기반 선택) (X' 입력)
 ```
 
 Expert 7은 Expert 2의 출력을 받아 작업합니다. **편집자가 초고를 쓰고, 교정자가 그 초고를 다듬는 것**과 같습니다.
