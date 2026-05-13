@@ -7,7 +7,8 @@
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-blue)]()
 [![AWS](https://img.shields.io/badge/AWS-Bedrock%20%7C%20SageMaker%20%7C%20Trainium-FF9900?logo=amazonaws)]()
 
-*GPT-5, DeepSeek-V4, Llama 4, Qwen3, Mistral Large 3 — 2026년 프론티어 모델의 공통 아키텍처*
+*GPT-5, DeepSeek-V4, Llama 4, Qwen3, Mistral Large 3 
+— 2026년 프론티어 모델의 공통 아키텍처*
 
 </div>
 
