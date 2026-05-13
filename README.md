@@ -7,8 +7,7 @@
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-blue)]()
 [![AWS](https://img.shields.io/badge/AWS-Bedrock%20%7C%20SageMaker%20%7C%20Trainium-FF9900?logo=amazonaws)]()
 
-*GPT-5, DeepSeek-V4, Llama 4, Qwen3, Mistral Large 3 
-— 2026년 프론티어 모델의 공통 아키텍처*
+*GPT-5, DeepSeek-V4, Llama 4, Qwen3, Mistral Large 3 — 2026년 프론티어 모델의 공통 아키텍처*
 
 </div>
 
@@ -242,16 +241,11 @@ Expert 7은 Expert 2의 출력을 받아 작업합니다. **편집자가 초고�
 
 ## 5부: AWS에서 MoE 활용하기
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    "나는 MoE 모델을..."                           │
-├─────────────────┬───────────────────┬───────────────────────────┤
-│  쓰기만 하면 된다  │  파인튜닝하고 싶다  │  처음부터 학습하고 싶다     │
-│                 │                   │                           │
-│  Amazon Bedrock │  SageMaker AI     │  SageMaker + Trn3/P5     │
-│  (API 호출)     │  + Multi-LoRA     │  + Expert Parallelism    │
-└─────────────────┴───────────────────┴───────────────────────────┘
-```
+| 목적 | AWS 서비스 | 설명 |
+|------|-----------|------|
+| **MoE 모델을 쓰기만 하면 된다** | Amazon Bedrock | API 호출만으로 추론. 인프라 관리 불필요 |
+| **파인튜닝하고 싶다** | SageMaker AI + Multi-LoRA | Expert별 선택적 adapter, vLLM 기반 서빙 |
+| **처음부터 학습하고 싶다** | SageMaker + Trn3/P5 + Expert Parallelism | 4D 병렬화, 조 단위 파라미터 학습 |
 
 ### Amazon Bedrock: 서버리스 MoE 추론
 
